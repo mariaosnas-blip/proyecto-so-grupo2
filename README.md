@@ -9,7 +9,7 @@
 | Nombre | Código  
 |--------|--------
 | Juan Esteban Bernate Ballesteros | 25XXXXXX 
-|Maria Camila Porras Osnas  | 25XXXXXX 
+|Maria Camila Porras Osnas  | 2554188 
 | Veronica Mera Mosquera  | 25XXXXXX
 
 **Grupo asignado:** Grupo 2  
