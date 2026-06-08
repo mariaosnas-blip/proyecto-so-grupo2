@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Componentes - Grupo 2</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="componentes.html">Componentes</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+
+  <main>
+    <h1>Componentes del Proyecto</h1>
+
+    <h2>Componente 1: Virtualización</h2>
+    <p>Instalamos 2 VMs con VirtualBox: Ubuntu MATE 24.04 (gráfica) y Rocky Linux 9.4 (consola).
+    Ambas con particionamiento manual (/, swap, /home) y comunicación SSH.</p>
+    <img src="assets/img/vm-ssh.png" alt="Captura SSH">
+    <img src="assets/img/particiones.png" alt="Captura lsblk">
+
+    <h2>Componente 2: Docker</h2>
+    <p>Implementamos frontend con Nginx y backend con Python usando Docker Compose,
+    basados en la imagen rockylinux:9.</p>
+    <img src="assets/img/docker-frontend.png" alt="Frontend en navegador">
+    <img src="assets/img/docker-backend.png" alt="Backend respuesta">
+
+    <h2>Componente 3: Kubernetes</h2>
+    <p>Desplegamos Nginx con Minikube usando 2 réplicas iniciales, escalado a 3,
+    con servicio tipo NodePort.</p>
+    <img src="assets/img/kubectl-pods.png" alt="kubectl get pods">
+    <img src="assets/img/kubectl-scale.png" alt="Escalado a 3 replicas">
+  </main>
+</body>
+</html>
