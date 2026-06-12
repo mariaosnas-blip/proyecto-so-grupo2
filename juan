@@ -1,17 +1,12 @@
-# 1. Clonar el repo
+
 git clone <url-del-repo>
 
-# 2. Entrar a la carpeta
 cd proyecto-so-grupo2
 
-# 3. PRIMERO crear el archivo
 echo "Aporte de Juan Esteban" > juan.txt
 
-# 4. Luego agregar
 git add .
 
-# 5. Luego commit
 git commit -m "202554073 - Juan Esteban Bernate Ballesteros"
 
-# 6. Por último subir
 git push
