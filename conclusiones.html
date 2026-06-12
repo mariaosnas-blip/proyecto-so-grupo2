@@ -13,13 +13,43 @@
     <a href="conclusiones.html">Conclusiones</a>
   </nav>
 
-  <main>
-    <h1>Conclusiones</h1>
-    <ol>
-      <li>[Aprendizaje principal del proyecto]</li>
-      <li>[Dificultad encontrada y cómo la resolvieron]</li>
-      <li>[Recomendación para futuros proyectos]</li>
-    </ol>
-  </main>
-</body>
-</html>
+<main>
+  <h1 class="section-title">Conclusiones <span class="line"></span></h1>
+
+  <div class="card">
+    <span class="badge badge-blue">01</span>
+    <h2>Integración de tecnologías modernas</h2>
+    <p>A lo largo de este proyecto logramos construir una infraestructura completa
+    que integra virtualización, contenedores y orquestación. Implementamos dos VMs
+    Linux con comunicación SSH, desplegamos servicios con Docker Compose usando
+    Rocky Linux como imagen base, y orquestamos réplicas de Nginx con Kubernetes
+    Minikube. Esta experiencia nos permitió comprender cómo estas tecnologías se
+    complementan en entornos reales de producción.</p>
+  </div>
+
+<div class="card">
+  <span class="badge badge-orange">04</span>
+  <h2>Dificultades con SSH y red en Docker</h2>
+  <p>Uno de los desafíos más significativos fue la configuración del acceso SSH
+  entre las VMs. Al ejecutar <code>ssh usuario@192.168.100.20</code> recibimos
+  el error <code>Connection refused</code>, indicando que el servicio no estaba
+  activo en Rocky Linux. Fue necesario instalar <code>openssh-server</code>,
+  iniciarlo con <code>systemctl</code> y abrir el puerto en el firewall con
+  <code>firewall-cmd</code>. Aprendimos que una red funcional no garantiza que
+  los servicios estén disponibles; cada uno debe configurarse explícitamente.</p>
+  <p style="margin-top: 12px;">En Docker, enfrentamos dificultades para que el
+  frontend y el backend se comunicaran dentro de la red de contenedores.
+  Comprendimos que Docker maneja su propia capa de red interna y que es necesario
+  definir correctamente los puertos y dependencias en <code>docker-compose.yml</code>
+  para garantizar comunicación estable entre servicios.</p>
+</div>
+
+  <div class="card">
+    <span class="badge badge-green">03</span>
+    <h2>Documentación y trabajo colaborativo</h2>
+    <p>Aprendimos que dividir responsabilidades y documentar cada paso es tan
+    importante como el trabajo técnico mismo. Publicar el sitio en GitHub Pages y
+    mantener un repositorio con commits de todos los integrantes nos enseñó buenas
+    prácticas de colaboración que aplicaremos en proyectos profesionales futuros.</p>
+  </div>
+</main>
