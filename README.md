@@ -8,9 +8,9 @@
 
 | Nombre | Código  
 |--------|--------
-| Juan Esteban Bernate Ballesteros | 25XXXXXX 
+| Juan Esteban Bernate Ballesteros | 2554073
 |Maria Camila Porras Osnas  | 2554188 
-| Veronica Mera Mosquera  | 25XXXXXX
+| Veronica Mera Mosquera  | 2554087
 
 **Grupo asignado:** Grupo 2  
 **Distribución gráfica:** Ubuntu MATE 24.04 LTS  
